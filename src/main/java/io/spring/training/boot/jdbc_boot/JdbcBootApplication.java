@@ -8,6 +8,7 @@ public class JdbcBootApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JdbcBootApplication.class, args);
+
 	}
 
 }
