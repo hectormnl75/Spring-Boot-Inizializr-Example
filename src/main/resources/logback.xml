@@ -1,0 +1,20 @@
+<configuration>
+
+    <!-- Define el nivel de log para las clases de JDBC y la base de datos -->
+    <logger name="org.springframework.jdbc.core" level="DEBUG"/>
+    <logger name="org.springframework.boot.jdbc" level="DEBUG"/>
+    <logger name="org.hsqldb" level="DEBUG"/>
+
+    <!-- Define el patrón de salida en consola -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Define el root appender para los logs en consola -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>
